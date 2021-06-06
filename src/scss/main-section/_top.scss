@@ -1,0 +1,116 @@
+@use '../variables' as *;
+@use '../mixins' as m;
+
+// Top
+.top {
+  width: 100%;
+
+  @include m.responsive-size(medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// Input Group
+.input-group {
+  width: 100%;
+  max-width: 45rem;
+  position: relative;
+  padding: 3.2rem 2.5rem;
+  border-radius: $radius-common;
+  box-shadow: $shadow-common;
+  background-color: $light-element;
+  // 0px -3px 10px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+
+  @include m.responsive-size(medium) {
+    padding: 2.6rem;
+  }
+}
+
+.input-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: $color-input;
+  font-family: $font-main;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 2.2rem 2.2rem 2.2rem 9rem;
+  background-color: inherit;
+
+  &::placeholder {
+    color: $color-input;
+  }
+}
+
+.search-button {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  z-index: 10;
+  margin-left: 2.5rem;
+  color: $color-input;
+}
+
+// Filter section
+.filter {
+  width: 25rem;
+  margin-top: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: $radius-common;
+  box-shadow: $shadow-common;
+  padding: 2.2rem;
+  background-color: $light-element;
+
+  @include m.responsive-size(medium) {
+    margin-top: 0;
+    padding: 1.6rem;
+  }
+
+  &__title,
+  &__item {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__list {
+    position: absolute;
+    padding: 2.2rem;
+    width: 100%;
+    top: 7.5rem;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+    display: none;
+
+    &.show-list {
+      display: block;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-input;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}

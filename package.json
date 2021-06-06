@@ -1,0 +1,21 @@
+{
+  "name": "rest-countries-api-with-color-theme-switcher",
+  "version": "1.0.0",
+  "description": "![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.26.14",
+    "cssnano": "^5.0.5",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.3.0"
+  }
+}

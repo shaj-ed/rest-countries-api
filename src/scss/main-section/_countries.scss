@@ -1,0 +1,41 @@
+@use '../variables' as *;
+@use '../mixins' as m;
+
+.countries {
+  margin-top: 4rem;
+  display: grid;
+  grid-gap: 4.5rem;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  justify-content: center;
+
+  @include m.responsive-size(xlarge) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.country {
+  background-color: $light-element;
+  border-radius: $radius-common;
+  box-shadow: $shadow-common;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__flag {
+    height: 20rem;
+    background-color: $color-bg-dark;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    padding: 3.5rem 2.8rem;
+  }
+
+  &__region {
+    margin: 1rem 0 1rem 0;
+  }
+}

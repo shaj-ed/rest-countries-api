@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/css/main.css" />
+
+    <title>Rest Countries API with Color Theme Switcher</title>
+  </head>
+  <body id="country-details">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner container">
+        <a href="index.html" class="header__title"
+          ><h1>Where is the world?</h1></a
+        >
+
+        <button class="toggle-button btn-default">
+          <i class="far fa-moon" id="moon"></i>
+          Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main class="deatails-section">
+      <div class="container">
+        <a href="index.html" class="back-button country-button">
+          <i class="fas fa-long-arrow-alt-left"></i>
+          Back
+        </a>
+
+        <section class="country-details">
+          <!-- <div class="country-details__flag"></div>
+
+          <div class="country-details__main">
+            <h2 class="country-name country-details--name">Bangladesh</h2>
+
+            <div class="country-details--top">
+              <p class="country-info">
+                Native Name: <span class="light-text">BD</span>
+              </p>
+              <p class="country-info">
+                Population: <span class="light-text">population</span>
+              </p>
+              <p class="country-info">
+                Region: <span class="light-text">region</span>
+              </p>
+              <p class="country-info">
+                Subregion: <span class="light-text">Subregion</span>
+              </p>
+              <p class="country-info">
+                Capital: <span class="light-text">capital</span>
+              </p>
+            </div>
+
+            <div class="country-details--bottom">
+              <p class="country-info">
+                Top Level Domain: <span class="light-text">.bd</span>
+              </p>
+              <p class="country-info">
+                Currencies: <span class="light-text">taka</span>
+              </p>
+              <p class="country-info">
+                Languages: <span class="light-text">bangle, chakma, mro</span>
+              </p>
+            </div>
+
+            <div class="country-details--border">
+              <p class="country-info">Border Country:</p>
+              <div>
+                <a href="country.html" class="country-button">India</a>
+                <a href="country.html" class="country-button">Myanmar </a>
+              </div>
+            </div>
+          </div> -->
+        </section>
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="./dist/js/dark-mode.js"></script>
+    <script src="./dist/js/country.js"></script>
+  </body>
+</html>

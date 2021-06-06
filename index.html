@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/css/main.css" />
+
+    <title>Rest Countries API with Color Theme Switcher</title>
+  </head>
+  <body id="home">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner container">
+        <a href="index.html" class="header__title"
+          ><h1>Where is the world?</h1></a
+        >
+
+        <button class="toggle-button btn-default">
+          <i class="far fa-moon" id="moon"></i>
+          Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+      <div class="container">
+        <!-- Search and Filter section -->
+        <section class="top">
+          <div class="input-group">
+            <i class="fas fa-search search-button"></i>
+            <input
+              type="text"
+              id="input-search"
+              class="input-search"
+              placeholder="Search for a country..."
+            />
+          </div>
+
+          <div class="filter">
+            <h3 class="filter__title">Filter by region</h3>
+            <button class="filter__button btn-default">
+              <!-- <i class="fas fa-chevron-up" id="arrow"></i> -->
+              <i class="fas fa-chevron-down" id="arrow"></i>
+            </button>
+
+            <ul class="filter__list">
+              <li class="filter__item">Africa</li>
+              <li class="filter__item">Americas</li>
+              <li class="filter__item">Asia</li>
+              <li class="filter__item">Europe</li>
+              <li class="filter__item last">Oceania</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Countries -->
+        <section class="countries"></section>
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="./dist/js/dark-mode.js"></script>
+    <script src="./dist/js/app.js"></script>
+  </body>
+</html>

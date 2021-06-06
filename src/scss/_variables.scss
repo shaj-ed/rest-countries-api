@@ -1,0 +1,21 @@
+// Colors //
+
+// Default light theme
+$light-element: hsl(0, 0%, 100%);
+$color-bg: hsl(0, 0%, 98%);
+$color-text: hsl(200, 15%, 8%);
+$color-input: hsl(0, 0%, 52%);
+
+// Dark theme
+$dark-element: hsl(209, 23%, 22%);
+$color-bg-dark: hsl(207, 26%, 17%);
+$color-text-light: hsl(0, 0%, 100%);
+
+// Font //
+$font-main: "Nunito Sans", sans-serif;
+
+$radius-common: 0.5rem;
+$shadow-common: 1px 1px 10px -2px rgba(0, 0, 0, 0.05);
+$shadow-bold: 2px 2px 15px -2px rgba(22, 4, 4, 0.08);
+
+$shadow-light: 1px 1px 15px -2px rgba(0, 0, 0, 0.15);
